@@ -1,3 +1,116 @@
+/* Планшет (примерно до 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    width: 90%; /* вместо фиксированных 1300px */
+  }
+
+  header nav {
+    width: auto;
+    float: none;
+  }
+
+  header nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .hero--info {
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  .hero img {
+    position: static;
+    margin: 30px auto;
+    display: block;
+    max-width: 300px;
+  }
+
+  .trending .games {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .features .info .block {
+    width: 40%;
+  }
+
+  .projects .images {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .email .block {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .email .block input {
+    right: 0;
+    width: 100%;
+  }
+}
+
+/* Мобилки (примерно до 768px) */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero--info h1 {
+    font-size: 32px;
+  }
+
+  .hero--info h2 {
+    font-size: 18px;
+  }
+
+  .big-text {
+    width: 100%;
+    font-size: 24px;
+  }
+
+  .banner p {
+    width: 100%;
+  }
+
+  .features .info .block {
+    width: 80%;
+  }
+
+  .projects .images img {
+    width: 100%;
+  }
+
+  .email .block p {
+    width: 100%;
+  }
+
+  footer .blocks {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  footer .blocks p {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -136,6 +249,7 @@ header nav ul li.btn a:hover {
     top: -150px;
     right: -45px;
 }
+
 
 
 
